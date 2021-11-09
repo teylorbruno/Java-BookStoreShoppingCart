@@ -106,7 +106,7 @@ public class CartController extends HttpServlet {
 
         ShoppingCart cartObj = (ShoppingCart) session.getAttribute("cart");
 
-        cartObj.updateCart(index, quantity);
+        cartObj.updateCartItem(index, quantity);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
